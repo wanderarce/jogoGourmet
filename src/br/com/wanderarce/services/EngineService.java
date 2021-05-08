@@ -27,7 +27,11 @@ public class EngineService implements IEngine {
 	
 	@Override
 	public Node updateNode(Node node, String hint, String value, boolean isDish) {
-        String hunch = node.getNodeValue();
+        System.out.println(hint);
+        System.out.println(value);
+        System.out.println("Dish: " + isDish);
+        System.out.println(node.getNodeValue() +"-"+ node.isDish());
+		String hunch = node.getNodeValue();
         node.setDish(hint);
         node.setDish(false);
         node.setNodeLeft(new Node(value, null, null, isDish));

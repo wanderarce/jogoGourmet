@@ -48,7 +48,7 @@ public class Node {
 		this.isDish = isDish;
 	}
 
-	public boolean isLeaf() {
+	public boolean withoutChildren() {
 		return this.nodeRight == null && this.nodeLeft == null;
 	}
 }

@@ -29,9 +29,9 @@ public class EngineCore {
 	}
 
 	public void start() {
-		if (tree.getRoot() == null || tree.getRoot().getNodeLeft() == null) {
+		//if (tree.getRoot() == null || tree.getRoot().getNodeLeft() == null) {
 			showInitialDialog();
-		}
+		//}
 		opine(tree.getRoot());
 	}
 
@@ -102,7 +102,7 @@ public class EngineCore {
 	}
 	
 	private void finish() {
-		int close = JOptionPane.showConfirmDialog(null, "Sair?", "Jogo Gourmet", JOptionPane.YES_NO_OPTION);
+		int close = JOptionPane.showConfirmDialog(null, "Deseja encerrar o jogo?", "Jogo Gourmet", JOptionPane.YES_NO_OPTION);
 		if(close ==0) {
 			System.exit(1);
 		}
